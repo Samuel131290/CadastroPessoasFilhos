@@ -40,10 +40,6 @@ Permite cadastrar pessoas, atribuir filhos a essas pessoas e gerenciar os dados 
 - Servidor local (XAMPP, WAMP, Laragon ou similar)
 - MySQL
 
-### Configurar ambiente MySQL
-- Importar o Banco de Dados
-- Execute o script turim_db.sql no Workbench ou outro gerenciador de banco MySQL.
-
 ### Configurar o Servidor
 - Copie os arquivos do projeto para a pasta htdocs (XAMPP) ou equivalente.
 - Verifique se as credenciais de banco em grava.php e ler.php estão corretas:
@@ -51,6 +47,10 @@ Permite cadastrar pessoas, atribuir filhos a essas pessoas e gerenciar os dados 
   $pdo = new PDO('mysql:host=localhost;dbname=turim_db;charset=utf8mb4','root','',[
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);
+
+### Configurar ambiente MySQL
+- Importar o Banco de Dados
+- Execute o script turim_db.sql no Workbench ou outro gerenciador de banco MySQL.
 
 ### Executar a Aplicação
 - Acesse http://localhost/turim_app/index.html no seu navegador.
