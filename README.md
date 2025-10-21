@@ -42,9 +42,15 @@ Permite cadastrar pessoas, atribuir filhos a essas pessoas e gerenciar os dados 
 
 ### Configurar o Servidor
 - Copie os arquivos do projeto para a pasta htdocs (XAMPP) ou equivalente.
-- Verifique se as credenciais de banco em grava.php e ler.php estão corretas:
+- Abra o projeto pelo VS Code e verifique as credenciais de banco de dados nos arquivos grava.php e ler.php :
   
   $pdo = new PDO('mysql:host=localhost;dbname=turim_db;charset=utf8mb4','root','',[
+  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+]);
+
+- Caso houver, inclua a senha do MySQL após 'root':
+  
+  $pdo = new PDO('mysql:host=localhost;dbname=turim_db;charset=utf8mb4','root','## SENHA',[
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);
 
