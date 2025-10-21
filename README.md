@@ -59,4 +59,4 @@ Permite cadastrar pessoas, atribuir filhos a essas pessoas e gerenciar os dados 
 - Execute o script turim_db.sql no Workbench ou outro gerenciador de banco MySQL.
 
 ### Executar a Aplicação
-- Acesse http://localhost/turim_app/index.html no seu navegador.
+- Acesse http://localhost/CadastroPessoasFilhos-main/ no seu navegador.
